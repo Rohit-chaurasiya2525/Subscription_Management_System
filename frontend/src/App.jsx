@@ -8,6 +8,16 @@ import {
 
 import DashboardLayout from "./layout/DashboardLayout";
 import Dashboard from "./pages/Dashboard";
+import Products from "./pages/Products";
+import Plans from "./pages/Plans";
+import Subscriptions from "./pages/Subscriptions";
+import Quotations from "./pages/Quotations";
+import Invoices from "./pages/Invoices";
+import Payments from "./pages/Payments";
+import Customers from "./pages/Customers";
+import Discounts from "./pages/Discounts";
+import Reports from "./pages/Reports";
+import Settings from "./pages/Settings";
 
 function ModulePage({ title }) {
   return (
@@ -37,16 +47,16 @@ function App() {
 
           <Route path="/dashboard" element={<Dashboard />} />
 
-          <Route path="/products" element={<ModulePage title="Products" />} />
-          <Route path="/plans" element={<ModulePage title="Plans" />} />
-          <Route path="/subscriptions" element={<ModulePage title="Subscriptions" />} />
-          <Route path="/quotations" element={<ModulePage title="Quotations" />} />
-          <Route path="/invoices" element={<ModulePage title="Invoices" />} />
-          <Route path="/payments" element={<ModulePage title="Payments" />} />
-          <Route path="/customers" element={<ModulePage title="Customers" />} />
-          <Route path="/discounts" element={<ModulePage title="Discounts" />} />
-          <Route path="/reports" element={<ModulePage title="Reports" />} />
-          <Route path="/settings" element={<ModulePage title="Settings" />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/plans" element={<Plans />} />
+          <Route path="/subscriptions" element={<Subscriptions />} />
+         <Route path="/quotations" element={<Quotations />} />
+          <Route path="/invoices" element={<Invoices />} />
+          <Route path="/payments" element={<Payments />} />
+          <Route path="/customers" element={<Customers />} />
+          <Route path="/discounts" element={<Discounts />} />
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/settings" element={<Settings />} />
 
           <Route path="*" element={<ModulePage title="Page Not Found" />} />
 
